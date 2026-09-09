@@ -1,0 +1,39 @@
+// Reverse a String Program
+
+let input = "JavaScript Programming";
+
+console.log("Original String: " + input);
+console.log("String Length: " + input.length);
+
+let reversedString = "";
+
+for (let i = input.length - 1; i >= 0; i--) {
+    reversedString += input[i];
+}
+
+console.log("Reversed String: " + reversedString);
+
+// Check whether the string is empty
+if (input.length === 0) {
+    console.log("The string is empty.");
+} else {
+    console.log("The string is not empty.");
+}
+
+// Convert to uppercase
+console.log("Uppercase: " + input.toUpperCase());
+
+// Convert to lowercase
+console.log("Lowercase: " + input.toLowerCase());
+
+// Count characters excluding spaces
+let count = 0;
+
+for (let i = 0; i < input.length; i++) {
+    if (input[i] !== " ") {
+        count++;
+    }
+}
+
+console.log("Characters excluding spaces: " + count);
+
